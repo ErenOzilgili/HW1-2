@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class arrayOperations {
 
+    //create the array with random numbers in range 0-100
     public static int[] createArray(int arraySize)
     {
         Random rand = new Random();
