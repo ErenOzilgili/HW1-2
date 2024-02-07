@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class arrayOperations {
 
     //returns the sum of the elements in the array at even and odd indexes
@@ -43,4 +45,16 @@ public class arrayOperations {
         return max;
     }
 
+    public static int[] createArray(int arraySize)
+    {
+        Random rand = new Random();
+
+        int[] newArray = new int[arraySize];
+
+        for(int i = 0 ; i < arraySize ; i++)
+        {
+            newArray[i] = rand.nextInt(100);
+        }
+        return newArray;
+    }
 }
