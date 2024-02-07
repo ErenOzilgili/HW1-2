@@ -1,4 +1,20 @@
+import java.util.Random;
+
 public class arrayOperations {
+
+
+    public static int[] createArray(int arraySize)
+    {
+        Random rand = new Random();
+
+        int[] newArray = new int[arraySize];
+
+        for(int i = 0 ; i < arraySize ; i++)
+        {
+            newArray[i] = rand.nextInt(100);
+        }
+        return newArray;
+    }
 
     //returns the sum of the elements in the array at even and odd indexes
     public static int[] getSumOfIndexes(int[] arr) {
