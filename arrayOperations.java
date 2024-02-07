@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class arrayOperations {
 
-
     public static int[] createArray(int arraySize)
     {
         Random rand = new Random();
@@ -73,7 +72,7 @@ public class arrayOperations {
      * -Returns the average of the given array and
      * display the differences between each element and average
      */
-    public static int averageofArrau(int [] arr)
+    public static int averageOfArray(int [] arr)
     {
         int sum = 0;
         int average = 0;
