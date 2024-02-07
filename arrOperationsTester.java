@@ -7,23 +7,24 @@ public class arrOperationsTester{
 
         //Welcoming user to the program
         System.out.println("Welcome to array operations program!");
-        System.out.println("Type the array size: ");
+        System.out.print("Type the array size: ");
         int size = in.nextInt();
 
         //Creating array with create array method
-        System.out.println("Creating an array: ");
         int [] arr = arrayOperations.createArray(size);
+        
+        System.out.println();
+        System.out.println("Operations: ");
 
         //Displayng choices
-        System.out.println("Please choose an operation: ");
-        System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4)Sum of indexes" + "\n" + "5) Exit" );
+        System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4) Sum of indexes" + "\n" + "5) Exit" );
+        System.out.print("Please choose an operation: ");
 
         while(true)
         {
-
             //If the choice is not valid type it asks the user again
             while(!in.hasNextInt()){
-                System.out.println("You have supposed to enter an integer ");
+                System.out.println("You have supposed to enter an integer");
                 System.out.println("Try again");
                 in.nextLine();
             }
@@ -37,7 +38,7 @@ public class arrOperationsTester{
             }
             else if(choice == 2){
                 //Summons the minOfArray method
-                System.out.print(" The minimum number of array is: ");
+                System.out.print("The minimum number of array is: ");
                 System.out.println(arrayOperations.minOfArray(arr));
             }
             else if(choice ==3){
@@ -58,6 +59,7 @@ public class arrOperationsTester{
             else{
                 //Pushes user to type valid choice
                 System.out.println("Invalid choice");
+                System.out.println();
             }
 
         }
