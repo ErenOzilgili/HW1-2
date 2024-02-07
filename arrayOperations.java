@@ -53,6 +53,10 @@ public class arrayOperations {
         
         return max;
     }
+    /*
+     * -Returns the average of the given array and
+     * display the differences between each element and average
+     */
     public static int averageofArrau(int [] arr)
     {
         int sum = 0;
