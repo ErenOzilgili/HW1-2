@@ -11,9 +11,8 @@ public class arrOperationsTester{
         int size = in.nextInt();
 
         //Creating array with create array method
-        int [] arr = arrayOperations.createArray(size);
-
         System.out.println("Creating an array: ");
+        int [] arr = arrayOperations.createArray(size);
 
         //Displayng choices
         System.out.println("Please choose an operation: ");
@@ -38,7 +37,7 @@ public class arrOperationsTester{
             }
             else if(choice == 2){
                 //Summons the minOfArray method
-                System.out.print("Minimum number of array is: ");
+                System.out.print(" The minimum number of array is: ");
                 System.out.println(arrayOperations.minOfArray(arr));
             }
             else if(choice ==3){
