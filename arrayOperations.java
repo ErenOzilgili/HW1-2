@@ -93,7 +93,7 @@ public class arrayOperations {
 
         for(int i = 0; i < arr.length; i++)
         {
-            System.out.println(result[i] + ",");
+            System.out.print(result[i] + ",");
         }
         
         return average;
