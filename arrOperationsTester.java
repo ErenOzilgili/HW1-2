@@ -14,9 +14,6 @@ public class arrOperationsTester{
         int [] arr = arrayOperations.createArray(size);
 
         System.out.println("Creating an array: ");
-        for(int i=0; i<arr.length; i++){
-            arr[i] = in.nextInt();
-        }
 
         //Displayng choices
         System.out.println("Please choose an operation: ");
