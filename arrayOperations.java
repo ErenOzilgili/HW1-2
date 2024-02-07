@@ -84,14 +84,17 @@ public class arrayOperations {
         }
         // by dividing the sum to the number of elements we get total
         average = sum / arr.length;
+
         for(int i = 0; i < arr.length; i++)
         {
             result[i] = arr[i] - average;
         }
+
         for(int i = 0; i < arr.length; i++)
         {
             System.out.println(result[i] + ",");
         }
+        
         return average;
         
     }
