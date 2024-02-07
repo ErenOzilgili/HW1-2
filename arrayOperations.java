@@ -9,8 +9,7 @@ public class arrayOperations {
         }
         return result;
     }
-
-    
+ 
     /*
      * -Returns the minimum of the given array by 
      * iterating through succesive indexes
@@ -53,6 +52,7 @@ public class arrayOperations {
         
         return max;
     }
+
     /*
      * -Returns the average of the given array and
      * display the differences between each element and average
@@ -78,5 +78,5 @@ public class arrayOperations {
         return average;
         
     }
-    //
+    
 }
