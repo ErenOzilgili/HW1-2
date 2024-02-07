@@ -78,10 +78,12 @@ public class arrayOperations {
         int sum = 0;
         int average = 0;
         int [] result = new int[arr.length];
+        //  we get the sum of elements in array
         for(int i = 0; i < arr.length; i++)
         {
             sum += arr[i];
         }
+        // by dividing the sum to the number of elements we get total
         average = sum / arr.length;
         for(int i = 0; i < arr.length; i++)
         {
@@ -94,5 +96,6 @@ public class arrayOperations {
         return average;
         
     }
+   
     
 }
