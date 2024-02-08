@@ -9,24 +9,24 @@ public class arrOperationsTester{
         System.out.println("Welcome to array operations program!");
         System.out.print("Type the array size: ");
         int size = in.nextInt();
-
+       
         //Creating array with create array method
         int [] arr = arrayOperations.createArray(size);
         
         System.out.println();
-        System.out.println("Operations: ");
-
-        //Displayng choices
-        System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4) Sum of indexes" + "\n" + "5) Exit" );
-        System.out.print("Please choose an operation: ");
 
         while(true)
         {
+            System.out.println("Operations: ");
+
+            //Displaying choices
+            System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4) Sum of indexes" + "\n" + "5) Exit" );
+            System.out.print("Please choose an operation: ");
+
             //If the choice is not valid type it asks the user again
             while(!in.hasNextInt()){
-                System.out.println("You have supposed to enter an integer");
-                System.out.println("Try again");
-                in.nextLine();
+                System.out.print("You have supposed to enter an integer! Try again: ");
+                in.next();
             }
 
             int choice = in.nextInt();
@@ -35,21 +35,25 @@ public class arrOperationsTester{
                 //Summons the maxOfArray method
                 System.out.print("The maximum number of array is: ");
                 System.out.println(arrayOperations.maxOfArray(arr));
+                System.out.println();
             }
             else if(choice == 2){
                 //Summons the minOfArray method
                 System.out.print("The minimum number of array is: ");
                 System.out.println(arrayOperations.minOfArray(arr));
+                System.out.println();
             }
             else if(choice ==3){
                 //Summons the averageOfArray method
                 System.out.print("The average of array is: ");
                 System.out.println(arrayOperations.averageOfArray(arr));
+                System.out.println();
             }
             else if(choice == 4){
                 //Summons the sumOfIndexes method
                 System.out.print("Sum of indexes are: ");
                 System.out.println(arrayOperations.getSumOfIndexes(arr));
+                System.out.println();
             }
             else if(choice == 5){
                 //Exits
@@ -61,12 +65,10 @@ public class arrOperationsTester{
                 System.out.println("Invalid choice");
                 System.out.println();
             }
-
         }
 
         in.close();
-        
-        
+            
     }
 }
 
