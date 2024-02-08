@@ -52,7 +52,7 @@ public class arrOperationsTester{
             else if(choice == 4){
                 //Summons the sumOfIndexes method
                 System.out.print("Sum of indexes are: ");
-                System.out.println(arrayOperations.getSumOfIndexes(arr));
+                System.out.println(arrayOperations.getSumOfIndexes(arr)[0]);
                 System.out.println();
             }
             else if(choice == 5){
