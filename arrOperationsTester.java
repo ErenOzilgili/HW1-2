@@ -1,3 +1,6 @@
+/**
+ * @author Mehmet Efe Mutlu
+ */
 import java.util.Scanner;
 
 public class arrOperationsTester{

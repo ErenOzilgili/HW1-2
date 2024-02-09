@@ -2,6 +2,11 @@ import java.util.Random;
 
 public class arrayOperations {
 
+    /**
+     * @author Ahmet Eren Gözübenli
+     * @param arraySize
+     * @return randomly filled array
+     */
     //create the array with random numbers in range 0-100
     public static int[] createArray(int arraySize)
     {
@@ -16,6 +21,12 @@ public class arrayOperations {
         return newArray;
     }
 
+    /**
+     * @author Hikmet Şamil Karaş
+     * @param arr
+     * @return the sum of the elements in the array at even and odd indexes
+     *
+     */
     //returns the sum of the elements in the array at even and odd indexes
     public static int [] getSumOfIndexes(int[] arr) {
         int[] result = {0, 0};
@@ -26,7 +37,11 @@ public class arrayOperations {
         return result;
     }
  
-    /*
+    /**
+     * @author Eren Özilgili
+     * @param arr
+     * @return the minimum of the given array
+     * 
      * -Returns the minimum of the given array by 
      * iterating through succesive indexes
      */
@@ -48,7 +63,11 @@ public class arrayOperations {
         return min;
     }
 
-    /*
+    /**
+     * @author Eren Öziligli
+     * @param arr
+     * @return the maximum of the given array
+     * 
      * -Returns the maximum of the given array by 
      * iterating through succesive indexes
      */
@@ -69,7 +88,11 @@ public class arrayOperations {
         return max;
     }
 
-    /*
+    /**
+     * @author Burak Tutuş
+     * @param arr
+     * @return the average of the given array
+     * 
      * -Returns the average of the given array and
      * display the differences between each element and average
      */
