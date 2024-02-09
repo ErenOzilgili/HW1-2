@@ -99,28 +99,38 @@ public class arrayOperations {
     public static int averageOfArray(int [] arr)
     {
         int sum = 0;
-        int average = 0;
-        int [] result = new int[arr.length];
+        int average = 0;        
         //  we get the sum of elements in array
         for(int i = 0; i < arr.length; i++)
         {
             sum += arr[i];
         }
         // by dividing the sum to the number of elements we get total
-        average = sum / arr.length;
-
+        average = sum / arr.length;        
+        return average;
+        
+    }
+    /**
+     * @author Burak Tutuş
+     * @param arr     
+     * 
+     * -Returns the average of the given array and
+     * display the differences between each element and average
+     */
+    public static void DifferencesOfAverage(int [] arr)
+    {
+        int [] result = new int[arr.length];
+        //creating an array that stores the differences between elements and average
         for(int i = 0; i < arr.length; i++)
         {
-            result[i] = arr[i] - average;
+            result[i] = arr[i] - averageOfArray(arr);
         }
-
+        // displaying the array
         for(int i = 0; i < arr.length; i++)
         {
             System.out.print(result[i] + ",");
         }
-        
-        return average;
-        
+
     }
    
     
