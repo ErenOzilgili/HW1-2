@@ -23,7 +23,7 @@ public class arrOperationsTester{
             System.out.println("Operations: ");
 
             //Displaying choices
-            System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4) Sum of indexes" + "\n" + "5) Exit" );
+            System.out.println("1) Maximum of array " + "\n" + "2) Minimum of array" + "\n" + "3) Average of array" + "\n" + "4) Sum of indexes" + "\n" + "5) Exit");
             System.out.print("Please choose an operation: ");
 
             //If the choice is not valid type it asks the user again
@@ -48,8 +48,10 @@ public class arrOperationsTester{
             }
             else if(choice ==3){
                 //Summons the averageOfArray method
-                System.out.print("The average of array is: ");
-                System.out.println(arrayOperations.averageOfArray(arr));
+                System.out.print("The average of array is: " + arrayOperations.averageOfArray(arr));
+                System.out.println();
+                System.out.println("Difference of the each element from average is: ");
+                arrayOperations.DifferencesOfAverage(arr);
                 System.out.println();
             }
             else if(choice == 4){
@@ -60,18 +62,17 @@ public class arrOperationsTester{
             }
             else if(choice == 5){
                 //Exits
-                System.out.println("Exiting");
+                System.out.println("Exiting.");
                 break;
             }
             else{
                 //Pushes user to type valid choice
-                System.out.println("Invalid choice");
+                System.out.println("Invalid choice.");
                 System.out.println();
             }
         }
 
-        in.close();
-            
+        in.close();       
     }
 }
 
