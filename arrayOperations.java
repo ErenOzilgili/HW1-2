@@ -141,10 +141,12 @@ public class arrayOperations {
             result[i] = arr[i] - averageOfArray(arr);
         }
         // displaying the array
-        for(int i = 0; i < arr.length; i++)
+        System.out.print(result[0]);
+        for(int i = 1; i < arr.length; i++)
         {
-            System.out.print(result[i] + ",");
+            System.out.print("," + result[i]);
         }
+        System.out.println();
 
     }
    

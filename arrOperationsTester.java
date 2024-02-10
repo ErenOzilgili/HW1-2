@@ -15,6 +15,9 @@ public class arrOperationsTester{
        
         //Creating array with create array method
         int [] arr = arrayOperations.createArray(size);
+
+        //Displaying the randomly filled array
+        arrayOperations.displayArray(arr);
         
         System.out.println();
 
@@ -50,14 +53,17 @@ public class arrOperationsTester{
                 //Summons the averageOfArray method
                 System.out.print("The average of array is: ");
                 System.out.println(arrayOperations.averageOfArray(arr));
+                System.out.println();
                 System.out.println("Difference of the each element from average is: ");
-                arrayOperations.DifferencesOfAverage(arr);
+                arrayOperations.differencesOfAverage(arr);
                 System.out.println();
             }
             else if(choice == 4){
                 //Summons the sumOfIndexes method
-                System.out.print("Sum of indexes are: ");
+                System.out.print("Sum of even indexes are: ");
                 System.out.println(arrayOperations.getSumOfIndexes(arr)[0]);
+                System.out.print("Sum of odd indexes are: ");
+                System.out.println(arrayOperations.getSumOfIndexes(arr)[1]);
                 System.out.println();
             }
             else if(choice == 5){
