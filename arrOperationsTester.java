@@ -48,8 +48,8 @@ public class arrOperationsTester{
             }
             else if(choice ==3){
                 //Summons the averageOfArray method
-                System.out.print("The average of array is: " + arrayOperations.averageOfArray(arr));
-                System.out.println();
+                System.out.print("The average of array is: ");
+                System.out.println(arrayOperations.averageOfArray(arr));
                 System.out.println("Difference of the each element from average is: ");
                 arrayOperations.DifferencesOfAverage(arr);
                 System.out.println();
