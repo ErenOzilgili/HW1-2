@@ -22,6 +22,23 @@ public class arrayOperations {
     }
 
     /**
+     * @author Eren Özilgili
+     * @param arr
+     * 
+     * -Displays the array
+     */
+    public static void displayArray(int[] arr){
+        System.out.print("[");
+        for(int i = 0; i < arr.length - 1; i++){
+            System.out.print(arr[i] + ", ");
+            
+        }
+
+        System.out.print(arr[arr.length - 1] + "]\n");//This is for formatting concerns
+
+    }
+
+    /**
      * @author Hikmet Şamil Karaş
      * @param arr
      * @return the sum of the elements in the array at even and odd indexes
@@ -93,8 +110,7 @@ public class arrayOperations {
      * @param arr
      * @return the average of the given array
      * 
-     * -Returns the average of the given array and
-     * display the differences between each element and average
+     * -Returns the average of the given array 
      */
     public static int averageOfArray(int [] arr)
     {
@@ -114,10 +130,9 @@ public class arrayOperations {
      * @author Burak Tutuş
      * @param arr     
      * 
-     * -Returns the average of the given array and
-     * display the differences between each element and average
+     * -Displays the difference of each element compared to average
      */
-    public static void DifferencesOfAverage(int [] arr)
+    public static void differencesOfAverage(int [] arr)
     {
         int [] result = new int[arr.length];
         //creating an array that stores the differences between elements and average
